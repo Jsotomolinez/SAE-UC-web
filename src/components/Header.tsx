@@ -1,4 +1,4 @@
-import { ModeToggle } from "@/components/ModeToggle"
+import { ModeToggle } from "@/components/mode-toggle"
 import { MainNav } from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
