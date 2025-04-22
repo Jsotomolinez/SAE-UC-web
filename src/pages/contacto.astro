@@ -1,0 +1,25 @@
+---
+import "@/styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import ContactForm from "@/components/ui/contact-form";
+---
+
+<MainLayout>
+  <section
+    class={"py-12 md:py-24 lg:py-32 transition-opacity duration-1500 ease-initial w-full"}
+  >
+    <div class="mx-auto flex max-w-[980px] flex-col items-center gap-4 text-center">
+      <h1 class="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
+          Como contactarme
+      </h1>
+      <h3 class="max-w-[700px] text-2xl text-muted-foreground mb-5">
+        Puedes escribir a mi correo electronico aquí
+      </h3>
+      <div class="w-full lg:w-2/5">
+        <div class="relative z-10 grid place-items-center h-full">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

@@ -1,25 +1,38 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import "@/styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+<MainLayout>
+  <section class="flex flex-col justify-around items-center h-dvh w-dvw bg-cover bg-center bg-no-repeat bg-fixed p-5 pt-21 mt-[-4rem]"
+  style={{
+  backgroundImage: "url('/images/placeholder.jpg')",
+}}>
+
+<h1 class="text-8xl font-bold text-center">
+  SAE UC
+</h1>
+<h2 class="text-4xl font-bold text-center">
+  Esta es la pagina web de SAE UC en donde vas a encontrar toda la información que puedes querer sobre el equipo 
+</h2>
+</section>
+<section class="conteiner flex flex-col py-5 px-40">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 bg-amber-300">
+    <div class="col-span-1 h-fit">
+      <img src={"/images/placeholder.jpg"} alt="placeholder" height={300} width={300} />
+    </div>
+    <div class="col-span-1">
+      <h3>Construye con nosotros</h3>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 bg-green-700">
+    <div class="col-span-1 h-fit">
+      <h3>Construye con nosotros</h3>
+    </div>
+    <div class="col-span-1">
+      <img src="/images/placeholder.jpg" alt="placeholder"/>
+    </div>
+  </div>
+</section>
+</MainLayout>
