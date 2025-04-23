@@ -13,7 +13,7 @@ export function ProyectCard(
   }
 ) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300">
+    <div className="flex flex-col items-center justify-center rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 bg-amber-500">
       <div className="m-2 rounded-md overflow-hidden">
         <img src={imageSrc} alt={name} className="h-50 w-auto"/>
       </div>
