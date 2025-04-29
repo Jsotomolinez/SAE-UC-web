@@ -88,13 +88,13 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contacto</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Venezuela, edo Carabobo</p>
-              <p>jsotomolinez12@gmail.com</p>
-              <p>+58 412-0499985</p>
+              <p>Dirección</p>
+              <p>Correo electronico</p>
+              <p>numero de teléfono</p>
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Mis redes</h3>
+            <h3 className="text-lg font-semibold">Nuestras redes</h3>
             <div className="flex flex-col items-center md:flex-row px-2">
               <a href="https://www.aedin.com/in/jesus-alejandro-soto-molinez-0909b5345" target="blank" className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}>
                 <Facebook className="h-5 w-5" />
@@ -115,9 +115,9 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
         <Separator className="my-8" />
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground ">
-            &copy; {new Date().getFullYear()} Jesús Soto. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} SAE UC. Todos los derechos reservados.
           </p>
-          <div className="flex gap-4 text-sm text-muted-foreground">
+          {/* <div className="flex gap-4 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground">
               Términos
             </a>
@@ -127,7 +127,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
             <a href="#" className="hover:text-foreground">
               Cookies
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

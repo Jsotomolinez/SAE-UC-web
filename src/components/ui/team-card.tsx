@@ -8,9 +8,9 @@ export function TeamCard({
   position?: string;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-700 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300">
+    <div className="flex flex-col items-center justify-center bg-gray-700 rounded-lg p-4 shadow-black shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="m-2 rounded-md overflow-hidden">
-        <img src={imageSrc} alt={name}/>
+        <img src={imageSrc} alt={name} />
       </div>
       <div className="text-center mt-2">
         <h3 className="text-lg font-semibold">{name}</h3>
